@@ -1,0 +1,36 @@
+{
+  "name": "ai-hero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eval:dev": "evalite watch",
+    "main": "tsx main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@8.15.6",
+  "dependencies": {
+    "@ai-sdk/groq": "^1.2.7",
+    "@ai-sdk/mistral": "^1.1.10",
+    "@hono/node-server": "^1.13.8",
+    "ai": "^4.1.38",
+    "dotenv": "^16.4.5",
+    "hono": "^4.7.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "autoevals": "^0.0.119",
+    "evalite": "^0.8.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.5"
+  },
+  "prettier": {
+    "printWidth": 55
+  }
+}
