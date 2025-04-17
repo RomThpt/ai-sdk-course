@@ -9,6 +9,7 @@ import { CoreMessage } from "ai";
 import { createRecipe } from "./src/05-structured-outputs/Structured_output";
 import { logToConsole } from "./src/07-tool-calling/Tool_Calling";
 import { askWeather } from "./src/08-weather-app/Weather";
+import { createRecipeStreamed } from "./src/06-streaming-object/Streaming_object";
 
 dotenv.config();
 
@@ -35,10 +36,14 @@ dotenv.config();
 //   "Comment faire du baba ganoush ?"
 // );
 
-// const response = await logToConsole("Hello, world!");
+// const response = await logToConsole("chien");
+
+// const response = await askWeather(
+//   "Quel temps fait-il à Londres ?"
+// );
 
 const response = await askWeather(
-  "Quel temps fait-il à Londres ?"
+  "Quel temps fait-il à Paris ?"
 );
 
 console.log(response);
